@@ -1,0 +1,15 @@
+streamlit>=1.18
+streamlit-lottie
+pandas
+numpy
+scikit-learn
+scipy
+sentence-transformers
+bertopic
+umap-learn
+hdbscan
+pdfplumber
+reportlab
+Pillow
+plotly
+requests
