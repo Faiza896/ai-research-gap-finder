@@ -94,9 +94,8 @@ input, textarea {
 /* ── ALL BUTTONS full width like textarea ── */
 .stButton button {
     background: linear-gradient(135deg, #D4AF37, #B8962E);
-    color: #000000 !important;
+    color: #08090A;
     font-weight: 700;
-    border: 1px solid rgba(212,175,55,0.4) !important;        
     border-radius: 16px;
     padding: 12px;
     width: 100%;
@@ -679,6 +678,7 @@ elif st.session_state.page == "about":
     st.write("- Detects research gaps from uploaded papers using NLP.")
     st.write("- Supports PDF, TXT, CSV uploads and direct URLs.")
     st.write("- Built with Python, Streamlit, scikit-learn & Plotly.")
+    if st.button("← Back to Home", key="about_back"): nav_to("welcome")
     st.markdown('</div>', unsafe_allow_html=True)
 
 # ── SETTINGS ──────────────────────────────────────────────────────────────────
@@ -705,6 +705,7 @@ elif st.session_state.page == "settings":
         st.success("App reset!")
         nav_to("welcome")
     st.write("**App:** AI Research Gap Finder | **Theme:** Black & Gold")
+    if st.button("← Back to Home", key="settings_back"): nav_to("welcome")
     st.markdown('</div>', unsafe_allow_html=True)
 
 # ── HELP ──────────────────────────────────────────────────────────────────────
@@ -716,6 +717,7 @@ elif st.session_state.page == "help":
     st.write("- Paste a direct file URL (PDF/TXT/CSV) in the Input page.")
     st.write("- More papers uploaded = better and more accurate gap detection.")
     st.write("- Use the Dashboard page to see a visual summary of your results.")
+    if st.button("← Back to Home", key="help_back"): nav_to("welcome")
     st.markdown('</div>', unsafe_allow_html=True)
 
 # ══════════════════════════════════════════════════════════════════════════════
