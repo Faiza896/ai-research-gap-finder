@@ -13,3 +13,4 @@ reportlab
 Pillow
 plotly
 requests
+python-dotenv
